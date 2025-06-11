@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林煊凱的個人網站</title>
+
+    <!-- 連結外部 CSS 樣式表 -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- 網站 icon（修正 type 寫法） -->
+    <link rel="shortcut icon" href="img/1.png" type="image/x-icon">
+    <!-- CSS ---------------------------------------------------------------- -->
+    <style>
+        /*筆記*/
+        /*border:邊框*/
+        /*border:邊框粗細 顏色 線條樣式*/
+        /*padding:內邊距(上 右 下 左or上 左右 下or上下 左右)這些margin也適用*/
+        /*margin:較外的內邊距*/
+        /*position:relative相對(從原位進行移動以自身左上為起始點且包括自身且包括自身尺寸
+) absolute絕對(不包含自身全部帶著走)*/
+        /*right: 5vw靠右螢幕邊邊5%*/
+        /*position: absolute;用絕對來移動那些些項目*/
+        /*background-color: aqua;
+    border: 6px rgb(0, 0, 254)solid*/
+        /*border:邊框粗細 顏色 線條樣式*/
+        * {
+            /* 通用設定：取消預設邊距與內距 */
+            padding: 0;
+            /* 移除預設內距 */
+            margin: 0;
+            /* 移除預設外距 */
+            box-sizing: border-box;
+            /* 避免寬高計算錯誤 */
+            font-family: Arial, sans-serif;
+            /* 設定全站字型 */
+        }
+
+        /* ================== 頁首區域設定 ================== */
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #4CAF50;
+            /* 背景綠色 */
+            border: 10px hsl(0, 0%, 0%)solid
+                /*header邊框*/
+            border-bottom: 8px solid #2e7d32;
+            /* 深綠底線 */
+            display: flex;
+            align-items: center;
+            /* 垂直置中 */
+            justify-content: center;
+            /* 水平置中 */
+        }
+
+        header a {
+            /*header內的連結字*/
+            color: rgb(226, 43, 43);
+            text-decoration: none;
+            /*除連結底線*/
+        }
+
+        h1 {
+            text-align: center;
+            top: 40px;
+            /*距離上邊緣*/
+            line-height: 80px;
+            /*行高*/
+            /*left: 120px;距離左邊*/
+            color: white;
+            /* 白色文字 */
+            font-size: 32px;
+            /* 標題大小 */
+        }
+
+        /* ================== 導覽按鈕區 ================== */
+        .botton {
+
+            font-size: 26px;
+            /*字大小*/
+            font-size: bold;
+            /*粗體*/
+            padding: 20px 40px;
+            /*上下\ 左右*/
+            margin: auto 20px;
+            /*自動互相分開20px距離*/
+            background-color: rgb(148, 148, 188);
+            border-radius: 20px;
+            /*圓邊*/
+            text-decoration: none;
+            /*除底線*/
+            transition: all 0.3s ease;
+            /*延遲0.3秒*/
+            background-color: aliceblue;
+        }
+
+        .botton a:hover {
+            /*連結滑鼠懸停效果*/
+            text-decoration: underline;
+            /*滑鼠在連結選項的懸停效果*/
+            background-color: #fdd835;
+            /* 滑鼠懸停亮一點 */
+        }
+
+        .nav-bottons {
+            margin: 30px 0;
+            /* 上下間距 */
+            text-align: center;
+            display: flex;
+            /* 彈性排版 */
+            justify-content: center;
+            /* 置中排列 */
+            gap: 20px;
+            /* 按鈕間距 */
+        }
+
+        /* ================== 主內容區域 ================== */
+
+        img {
+            /*皮卡丘*/
+            display: block;
+            /*將圖片當成區塊元素（預設是 inline） */
+            margin: 0 auto 20px;
+            ;
+            /*上下左右外距為 20，讓圖片水平置中 */
+            max-width: 100%;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* 圓形圖片 */
+            border: 4px solid #4CAF50;
+            /* 綠色邊框 */
+        }
+
+        p {
+            color: #3f51b5;
+            /* 藍紫色文字 */
+            text-align: center;
+            /* 置中 */
+            font-size: 50px;
+            /* 字體大小 */
+            margin-top: 10px;
+            /* 上方間距 */
+        }
+
+        main {
+            background-color: brown;
+            width: 98%;
+            height: 1000px;
+            border: 10px hsl(0, 0%, 0%)solid
+        }
+
+        footer {
+            background-color: bisque;
+            border: 6px rgb(207, 254, 0)solid
+                /*border:邊框粗細 顏色 線條樣式*/
+        }
+    </style>
+    <!-- CSS ---------------------------------------------------------------- -->
+</head>
+
+
+<body>
+    <!-- 網頁內容 -->
+
+    <header>
+        <!-- 網站 logo/標題區塊 -->
+        <h1>林煊凱的個人網站</h1>
+        <!-- <nav>導覽列或主選單</nav>（目前未使用） -->
+    </header>
+
+    <main>
+        <!-- 網頁主要內容區域 -->
+
+        <!-- 導覽按鈕列 -->
+        <nav class="nav-bottons">
+            <a href="introduce.html" target="_self" class="botton">自我介紹</a>
+            <a href="interest.html" target="_self" class="botton">興趣</a>
+            <a href="edu.html" target="_self" class="botton">學歷</a>
+            <a href="special skill.html" target="_self" class="botton">專長</a>
+            <a href="class.html" target="_self" class="botton">課表</a>
+        </nav>
+
+        <!-- 個人大頭貼 -->
+        <img src="img/0.png" alt="我頭呢">
+        <p><em>座右銘：船到橋頭自然直</em></p>
+        <p>想說:排版好難ㄚㄚㄚㄚ</p>
+        
+
+    </main>
+
+    <footer>
+        <!-- 頁尾資訊 -->
+       <p> line id:0912345678<!-- 可改為聯絡資訊或社群連結 --></p>
+    </footer>
+
+</body>
+
+</html>

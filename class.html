@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課表</title>
+    <!-- CSS ---------------------------------------------------------------- -->
+    <style>
+    /* 連結樣式美化 */
+    .center-link a {
+      text-decoration: none;
+      color: white;
+      background-color: #f00000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    /* 滑鼠移過時變色 */
+    .center-link a:hover {
+      background-color: #ff6347;
+    }
+
+        table {
+            border-collapse: collapse;
+            /* 合併邊框 */
+            width: 100%;
+            /* 寬度 100% */
+            table-layout: fixed;
+            /* 固定表格佈局 */
+        }
+
+        /* 表格標題欄 (th) 和儲存格 (td) 樣式 */
+        th,
+        td {
+            border: 1px solid #a86f40;
+            /* 邊框 1px 實線，棕色 */
+            text-align: center;
+            /* 文字置中 */
+            vertical-align: middle;
+            /* 垂直置中 */
+            padding: 4px;
+            /* 內邊距 4px */
+            font-size: 14px;
+            /* 文字大小 14px */
+            word-wrap: break-word;
+            /* 長單字換行 */
+        }
+
+        /* 表格標題 (th) 樣式 */
+        th {
+            background-color: #45d9a5;
+            /* 背景色 橙紅色 */
+            color: rgb(255, 0, 0);
+            /* 文字白色 */
+            font-weight: bold;
+            /* 粗體 */
+        }
+    </style>
+    <!-- CSS ---------------------------------------------------------------- -->
+</head>
+
+<body>
+    <h3 class="h3">偶的課表</h3>
+
+    <table>
+        <tr>
+            <th class="time-col">節次</th>
+            <th class="time-col">時間</th>
+            <th>日</th>
+            <th>一</th>
+            <th>二</th>
+            <th>三</th>
+            <th>四</th>
+            <th>五</th>
+            <th>六</th>
+        </tr>
+
+        <tr>
+            <td class="time-label">第1節</td>
+            <td class="time-z">08:10 - 09:00</td>
+            <td class="grey"></td>
+            <td class="header"><br></td>
+            <td class="header"><br></td>
+            <td class="header"><br></td>
+            <td class="header"><br></td>
+            <td class="header"><br>體育(劍道)</td>
+            <td class="grey"></td>
+        </tr>
+
+        <tr>
+            <td class="time-label">第2節</td>
+            <td class="time-z">09:10 - 10:00</td>
+            <td class="grey"></td>
+            <td class="header">經濟學<br></td>
+            <td class="header">數位繪圖設計<br></td>
+            <td class="header">資訊管理導論<br></td>
+            <td class="header"><br></td>
+            <td class="header">體育(劍道)<br></td>
+            <td class="grey"></td>
+        </tr>
+
+        <tr>
+            <td class="time-label">第3節</td>
+            <td class="time-z">10:10 - 11:00</td>
+            <td class="grey"></td>
+            <td class="header">經濟學<br></td>
+            <td class="header">數位繪圖設計<br></td>
+            <td class="header">資訊管理導論<br></td>
+            <td class="header">進階程式設計<br></td>
+            <td class="header">健康與生活<br></td>
+            <td class="grey"></td>
+        </tr>
+
+        <tr>
+            <td class="time-label">第4節</td>
+            <td class="time-z">11:10 - 12:00</td>
+            <td class="grey"></td>
+            <td class="header">經濟學<br></td>
+            <td class="header">數位繪圖設計<br></td>
+            <td class="header">資訊管理導論<br></td>
+            <td class="header">進階程式設計<br></td>
+            <td class="header">健康與生活<br></td>
+            <td class="grey"></td>
+        </tr>
+
+        <tr>
+            <td class="time-label">第5節</td>
+            <td class="time-z">13:10 - 14:00</td>
+            <td class="grey"></td>
+            <td class="header">國文<br></td>
+            <td class="header"><br></td>
+            <td class="header">進階程式設計<br></td>
+            <td class="header">網頁設計<br></td>
+            <td class="header">人文關懷<br></td>
+            <td class="grey"></td>
+        </tr>
+
+        <tr>
+            <td class="time-label">第6節</td>
+            <td class="time-z">14:10 - 15:00</td>
+            <td class="grey"></td>
+            <td class="header">國文<br></td>
+            <td class="header"><br></td>
+            <td class="header">進階程式設計<br></td>
+            <td class="header">網頁設計<br></td>
+            <td class="header">人文關懷<br></td>
+            <td class="grey"></td>
+        </tr>
+
+        <tr>
+            <td class="time-label">第7節</td>
+            <td class="time-z">15:10 - 16:00</td>
+            <td class="grey"></td>
+            <td class="header">英文<br></td>
+            <td class="header"><br></td>
+            <td class="header"><br></td>
+            <td class="header">網頁設計<br></td>
+            <td class="header"><br></td>
+            <td class="grey"></td>
+        </tr>
+
+        <tr>
+            <td class="time-label">第8節</td>
+            <td class="time-z">16:10 - 17:00</td>
+            <td class="grey"></td>
+            <td class="header">英文<br></td>
+            <td class="header"><br></td>
+            <td class="header"><br></td>
+            <td class="header">網頁設計<br></td>
+            <td class="header"><br></td>
+            <td class="grey"></td>
+        </tr>
+
+
+    </table>
+    </table>
+    <div class="center-link">
+    <a href="http://127.0.0.1:5500/index.html" target="_self">回首頁</a>
+  </div>
+</body>
+
+</html>
